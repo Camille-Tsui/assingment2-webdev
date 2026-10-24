@@ -7,6 +7,6 @@ export const students = [
     { id: 6, firstName:"Julian", lastName:"Sloane", grade: 9, average: 63 },
     { id: 7, firstName:"Hazel", lastName:"Velez", grade: 12, average: 92 },
     { id: 8, firstName:"Rowan", lastName:"Gentry", grade: 11, average: 31 },
-    { id: 9, firstName:"Phoenix", lastName:"Write", grade: 10, average: 76 },
+    { id: 9, firstName:"Phoenix", lastName:"Wright", grade: 10, average: 76 },
     { id: 10, firstName:"Albert", lastName:"Einstein", grade: 9, average: 100 },
 ];

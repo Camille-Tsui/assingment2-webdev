@@ -20,11 +20,11 @@ const StudentList = () => {
     };
 
     return(
-        <div>
+        <div className=" flex flex-col gap-3">
             {students.map((student) => (
                 <StudentCard key={student.id} student={student} onRemove={handleRemove}></StudentCard>
             ))}
-            <p>No students left</p>
+            <p className="flex justify-center">No students left</p>
         </div>
     );
 };

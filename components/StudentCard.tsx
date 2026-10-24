@@ -32,14 +32,16 @@ const StudentCard = ({student, onRemove}: StudentCardProps) => {
     }
 
     return (
-        <div className="flex">
-            <p>{student.firstName} {student.lastName}</p>
-            <p>Grade: {student.grade} </p>
-            <p>Average: {student.average} </p>
+        <div className="flex flex-col mx-auto justify-between px-8 py-2 rounded-md shadow-md bg-slate-400">
+            <div className="flex w-auto items-center py-2">
+                <p className="w-50 text-lg font-semibold">{student.firstName} {student.lastName}</p>
+                <p className='w-20'>Grade: {student.grade} </p>
+            </div>
+
             {/* only shown when details is toggled */}
             {showDetails ? 
-            <div>
-                <p>Average: {student.average} </p> 
+            <div className="flex gap-2 justify-center w-auto py-2 items-center">
+                {/* Show honnor badge if grade is above 80 */}
                 {isHonnor ? 
                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none" />
@@ -50,17 +52,25 @@ const StudentCard = ({student, onRemove}: StudentCardProps) => {
                     </g>
                 </svg>
                 : ''}
+                <p>Average: {student.average} </p> 
             </div>
-            
             : ''}
-        <button onClick={toggleDetails}>
-            {showDetails ? 'Hide Details' : "Show Details"}
-        </button>
-        <button onClick={removeStudent}>
-            Remove
-        </button>
+
+            {/* Buttons */}
+            <div className='flex justify-center m-auto gap-4'>
+                <button onClick={toggleDetails} className="bg-indigo-500 px-2 py-2 rounded shadow-md hover:bg-indigo-700 w-30">
+                    {showDetails ? 'Hide Details' : "Show Details"}
+                </button>
+                <button onClick={removeStudent} className="bg-red-600 px-2 py-2 rounded shadow-md hover:bg-red-700 w-30">
+                    Remove
+                </button>
+            </div>
+
+
         </div>
     );
 };
+
+
 
 export default StudentCard;
