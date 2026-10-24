@@ -1,7 +1,10 @@
-
+import StudentList from "@/components/StudentList";
 
 export default function Home() {
   return (
-    <div></div>
+    <div>
+      {/* You can change this later im just testing */}
+      <StudentList/>
+    </div>
   );
 }

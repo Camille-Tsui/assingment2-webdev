@@ -1,4 +1,4 @@
-export const student = [
+export const students = [
     { id: 1, firstName:"John", lastName:"Smith", grade: 9, average: 69 },
     { id: 2, firstName:"Kasy", lastName:"Jones", grade: 10, average: 78 },
     { id: 3, firstName:"Harry", lastName:"Potter", grade: 11, average: 81 },
