@@ -15,10 +15,14 @@ interface Student {
 const StudentList = () => {
     const [students, setStudents] = useState<Student[]>(initalStudents);
 
+    const handleRemove = (id: number) => {
+        setStudents(students.filter((student) => student.id !== id));
+    };
+
     return(
         <div>
             {students.map((student) => (
-                <StudentCard key={student.id} student={student}></StudentCard>
+                <StudentCard key={student.id} student={student} onRemove={handleRemove}></StudentCard>
             ))}
             <p>No students left</p>
         </div>
