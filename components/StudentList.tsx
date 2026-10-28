@@ -1,28 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import { students as initalStudents } from "@/data/students";
+import { Student } from "@/data/students";
 import StudentCard from "@/components/StudentCard"
 
-interface Student {
-    id: number;
-    firstName: string;
-    lastName: string;
-    grade: number;
-    average: number;
+interface StudentListProps{
+    students: Student[];
+    onRemove: (id: number) => void;
 }
 
-const StudentList = () => {
-    const [students, setStudents] = useState<Student[]>(initalStudents);
-
-    const handleRemove = (id: number) => {
-        setStudents(students.filter((student) => student.id !== id));
-    };
-
+const StudentList = ({students, onRemove}: StudentListProps) => {
     return(
         <div className=" flex flex-col gap-3">
             {students.map((student) => (
-                <StudentCard key={student.id} student={student} onRemove={handleRemove}></StudentCard>
+                <StudentCard key={student.id} student={student} onRemove={onRemove}></StudentCard>
             ))}
             <p className="flex justify-center">No students left</p>
         </div>

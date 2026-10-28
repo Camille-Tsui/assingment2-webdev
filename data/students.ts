@@ -1,3 +1,12 @@
+export interface Student {
+    id: number;
+    firstName: string;
+    lastName: string;
+    grade: number;
+    average: number;
+}
+
+
 export const students = [
     { id: 1, firstName:"John", lastName:"Smith", grade: 9, average: 69 },
     { id: 2, firstName:"Kasy", lastName:"Jones", grade: 10, average: 78 },

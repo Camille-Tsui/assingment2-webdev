@@ -1,10 +1,10 @@
-import StudentList from "@/components/StudentList";
+import StudentPortal from "@/components/StudentPortal";
 
 export default function Home() {
   return (
     <div>
       {/* You can change this later im just testing */}
-      <StudentList/>
+      <StudentPortal/>
     </div>
   );
 }
