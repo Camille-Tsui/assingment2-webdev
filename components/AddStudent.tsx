@@ -44,26 +44,26 @@ const addStudent = ({ onAdd }: addStudentProps) => {
   };
 
   return (
-    <div className="flex items-center flex-col gap-3">
-      <div className="flex gap-3 items-center">
+    <div className="flex w-full items-center flex-col gap-3">
+      <div className="grid w-full grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
         <div className="flex-col">
             <div>
-                First name
+                First Name
             </div>
           <input
             type="text"
             value={firstName}
             onChange={handleFirstNameChange}
-            className="flex-1 rounded-lg border border-slate-600 px-4 py-3 text-slate-900 focus:border-purple-500 focus:outline-none"
+            className="w-full rounded-lg border border-slate-600 px-4 py-3 text-slate-900 focus:border-purple-500 focus:outline-none"
           ></input>
         </div>
         <div className="flex-col">
-            <div>Last name</div>
+            <div>Last Name</div>
             <input
           type="text"
           value={lastName}
           onChange={handleLastNameChange}
-          className="flex-1 rounded-lg border border-slate-600 px-4 py-3 text-slate-900 focus:border-purple-500 focus:outline-none"
+          className="w-full rounded-lg border border-slate-600 px-4 py-3 text-slate-900 focus:border-purple-500 focus:outline-none"
         ></input>
         </div>
 
@@ -75,7 +75,7 @@ const addStudent = ({ onAdd }: addStudentProps) => {
           onChange={handleGradeChange}
           min={9}
           max={12}
-          className="flex-1 rounded-lg border border-slate-600 px-4 py-3 text-slate-900 focus:border-purple-500 focus:outline-none"
+          className="w-full rounded-lg border border-slate-600 px-4 py-3 text-slate-900 focus:border-purple-500 focus:outline-none"
         ></input>
         </div>
         <div className="flex-col">
@@ -88,7 +88,7 @@ const addStudent = ({ onAdd }: addStudentProps) => {
           onChange={handleAverageChange}
           min={0}
           max={100}
-          className="flex-1 rounded-lg border border-slate-600 px-4 py-3 text-slate-900 focus:border-purple-500 focus:outline-none"
+          className="w-full rounded-lg border border-slate-600 px-4 py-3 text-slate-900 focus:border-purple-500 focus:outline-none"
         ></input>
         </div>
         
@@ -96,9 +96,9 @@ const addStudent = ({ onAdd }: addStudentProps) => {
 
       <button
         onClick={handleAdd}
-        className="bg-red-600 px-3 py-2 rounded shadow-md hover:bg-red-700 w-30 "
+        className="bg-purple-500 px-6 py-3 rounded shadow-md hover:bg-purple-700 text-white"
       >
-        add
+        Add Student
       </button>
     </div>
   );
