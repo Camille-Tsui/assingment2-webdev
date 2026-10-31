@@ -15,7 +15,7 @@ const searchBox = ({searchText, onSearchChange}: searchBoxProps) =>{
         <input
         type="text"
         value={searchText}
-        placeholder="search"
+        placeholder="Search Students..."
         onChange={handleSearchChange}
         className="flex-1 rounded-lg border border-slate-600 px-5 py-3 text-slate-900 focus:border-purple-500 focus:outline-none"
         />
