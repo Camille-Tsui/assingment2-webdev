@@ -1,7 +1,6 @@
 "use client";
 
-import { event } from "next/dist/build/output/log";
-import React, { useState } from "react";
+import { useState } from "react";
 
 interface addStudentProps {
   onAdd: (
