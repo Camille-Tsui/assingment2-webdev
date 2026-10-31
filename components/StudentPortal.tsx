@@ -49,6 +49,7 @@ const StudentPortal = () => {
                 />
             </section>
             <section id="students" className="scroll-mt-24 flex flex-col items-center"></section>
+                <h2 className="text-2xl font-bold text-center mb-4"> Students</h2>
             <div className="mb-4 flex w-full gap-3">
           <SearchBox searchText={searchText} onSearchChange={setSearchText}/>
             <button
@@ -57,6 +58,7 @@ const StudentPortal = () => {
             </div>
             <StudentList students={matchingStudents} onRemove={handleRemove}></StudentList>
                 <section id="add-student" className="scroll-mt-24 mt-6"></section>
+                <h2 className="text-2xl font-bold text-center mb-4"> Add A Student</h2>
         <AddStudent onAdd={handleAdd}></AddStudent>
         </main>
         
