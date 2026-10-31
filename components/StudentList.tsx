@@ -1,6 +1,3 @@
-"use client";
-
-import { useState } from "react";
 import { Student } from "@/data/students";
 import StudentCard from "@/components/StudentCard"
 
