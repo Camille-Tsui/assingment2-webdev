@@ -17,5 +17,11 @@ export const students = [
     { id: 7, firstName:"Hazel", lastName:"Velez", grade: 12, average: 92 },
     { id: 8, firstName:"Rowan", lastName:"Gentry", grade: 11, average: 31 },
     { id: 9, firstName:"Phoenix", lastName:"Wright", grade: 10, average: 76 },
-    { id: 10, firstName:"Albert", lastName:"Einstein", grade: 9, average: 100 },
+    { id: 10, firstName:"Albert", lastName:"Einstein", grade: 9, average: 94 },
+    { id: 11, firstName:"Peter", lastName:"Parker", grade: 10, average: 90 },
+    { id: 12, firstName:"Michael", lastName:"McDonald", grade: 10, average: 87 },
+    { id: 13, firstName:"Sarah", lastName:"Holland", grade: 9, average: 82 },
+    { id: 14, firstName:"Alice", lastName:"DeHarland", grade: 11, average: 83 },
+    { id: 15, firstName:"Zoe", lastName:"Joe", grade: 12, average: 91 },
+
 ];
