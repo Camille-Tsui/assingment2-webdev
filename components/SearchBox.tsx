@@ -1,11 +1,11 @@
 "use client"
 
-interface searchBoxProps{
+interface SearchBoxProps{
     searchText: string;
     onSearchChange: (text: string) => void;
 }
 
-const searchBox = ({searchText, onSearchChange}: searchBoxProps) =>{
+const SearchBox = ({searchText, onSearchChange}: SearchBoxProps) =>{
     const handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>) =>{
         onSearchChange(event.target.value);
     };
@@ -21,4 +21,4 @@ const searchBox = ({searchText, onSearchChange}: searchBoxProps) =>{
         />
     );
 }
-export default searchBox;
+export default SearchBox;

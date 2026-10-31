@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-interface addStudentProps {
+interface AddStudentProps {
   onAdd: (
     firstName: string,
     lastName: string,
@@ -11,7 +11,7 @@ interface addStudentProps {
   ) => void;
 }
 
-const addStudent = ({ onAdd }: addStudentProps) => {
+const AddStudent = ({ onAdd }: AddStudentProps) => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [grade, setGrade] = useState(9);
@@ -102,4 +102,4 @@ const addStudent = ({ onAdd }: addStudentProps) => {
     </div>
   );
 };
-export default addStudent;
+export default AddStudent;
